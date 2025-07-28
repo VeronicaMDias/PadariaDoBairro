@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<!--cadastro-->
+<body>
+    <h1>Cadastro</h1>
+    <p>*Campos obrigatórios</p>
+    <form>
+     <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" pattern="^\d{2}\d{4,5}\d{4}$" maxlength="11" placeholder="(xx)xxxxx-xxxx" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"placeholder="Seu.email@exemplo.com" required ><br>
+            <label for="data-nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="data-nascimento" name="data-nascimento">
+     </fieldset>
+      <!--endereco-->
+      <fieldset>      
+            <legend>Endereço</legend>
+            <label for="rua">Rua:</label><br>
+            <input type="text" id="rua" name="rua" placeholder="Rua ou avenida" required>
+            <br>
+            <label for="numero">Número:</label><br>
+            <input type="text" id="numero" name="numero" placeholder="Número" required>
+            <br>
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+            <br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+            <br>
+            <label for="estado">Estado:</label><br>
+            <input type="text" id="estado" name="estado" placeholder="Estado" required>
+            <br>
+            <label for="cep">CEP:</label><br>
+            <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" required>
+            <br><br>
+           </fieldset>
+
+           <!--preferencias-->
+           <fieldset>
+            <legend>Preferências</legend>
+            <p>Quais seus produtos preferidos ?</p>
+            <input type="checkbox" id="pre"name="preferencias" value="paes">
+            <label for="preferencias">Pães</label><br>
+            <input type="checkbox" id="preferencias"name="preferencias" value="doces">
+            <label for="preferencias">Doces</label><br>
+            <input type="checkbox" id="preferencias"name="preferencias" value="salgados">
+            <label for="preferencias">Salgados</label><br>
+            <input type="checkbox" id="preferencias"name="preferencias" value="pizzas">
+            <label for="preferencias">Pizzas</label><br>
+            <input type="checkbox" id="preferencias"name="preferencias" value="bebidas">
+            <label for="preferencias">Bebidas</label><br>
+            <input type="checkbox" id="preferencias"name="preferencias" value="bolos">
+            <label for="preferencias">Bolos</label><br>
+            
+        </fieldset>
+
+        <!--termos-->
+        <fieldset>
+            <legend>Termos e Condições</legend>
+            <input type="checkbox" id="termos"name="termos"
+            value="gostaria-de-receber-nossas-promoções-por-email?">
+            <label for="termos">Gostaria de receber nossas promoções por email?</label><br>
+            <input type="checkbox" id="termos"name="termos"
+            value="aceita-nossos-termos-de-uso?">
+            <label for="termos">Aceita nossos termos de uso ?</label><br>
+
+
+        </fieldset>
