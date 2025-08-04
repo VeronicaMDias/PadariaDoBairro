@@ -1,55 +1,82 @@
+
 Padaria MD - Website Institucional
-Este repositório contém o código-fonte de um website institucional simples para a "Padaria MD", destacando seus produtos, história, diferenciais, localização e horários de funcionamento.
+Bem-vindo ao repositório do site institucional da Padaria MD! Este é um projeto front-end desenvolvido para apresentar a padaria, seus produtos, cardápio e diferenciais, além de fornecer informações de contato e localização. O projeto foi criado com foco em um design clássico e acolhedor, refletindo a tradição de 20 anos do estabelecimento.
 
-Visão Geral
-O site da Padaria MD foi desenvolvido para apresentar aos clientes uma visão abrangente dos produtos e serviços oferecidos pela padaria, que possui 20 anos de tradição. Ele inclui informações sobre pães, doces, bebidas, frios, pizzas, além de detalhes sobre promoções, encomendas, delivery e a história da padaria.
+📜 Índice
+Visão Geral do Projeto
 
-Estrutura do Projeto
-O projeto é composto por um único arquivo HTML e utiliza uma estrutura de pastas assets para armazenar imagens e vídeos.
+✨ Funcionalidades
 
-.
-├── index.html
-└── assets/
-    ├── img/
-    │   ├── bolo-com-cobertura.jpg
-    │   ├── bolos-com-cobertura.jpg
-    │   ├── cesto-de-paofrances.jpg
-    │   ├── fornada-de-paesfraceses.jpg
-    │   ├── logo-da-padaria-vertical.jpg
-    │   ├── logo-da-padaria.jpg
-    │   ├── mix-de-embutidos.jpg
-    │   ├── paes-doces.jpg
-    │   ├── Paes-trancados.jpg
-    │   ├── pizza-de-queijo.jpg
-    │   ├── tres-copos-suco-natural.jpg
-    │   └── xicara-de-cafe-epão-de-queijo.jpg
-    └── video/
-        └── video-institucional-padaria.mp4
-Conteúdo do Site
-O website inclui as seguintes seções:
+🚀 Tecnologias Utilizadas
 
-Cabeçalho: Apresenta o nome da padaria, o logo e a mensagem "20 Anos de tradição".
+🎨 Estrutura de Estilos e Design
 
-Galeria de Imagens: Exibe diversas imagens dos produtos da padaria, como pães, doces, café e pão de queijo.
+🔧 Como Utilizar
 
-Nossos Produtos e Cardápio: Lista os tipos de produtos disponíveis na padaria e um cardápio detalhado com categorias, produtos, descrições e preços.
+✒️ Autor
 
-Sobre Nós: Conta a história da padaria, sua missão e um vídeo institucional.
+📖 Visão Geral do Projeto
+O site é uma página única (one-page) que utiliza links de navegação para rolar suavemente até as seções correspondentes. A página apresenta uma identidade visual consistente, com uma paleta de cores em tons de marrom e bege que remetem a produtos de panificação artesanal e um ambiente aconchegante.
 
-Diferenciais: Destaca promoções diárias, a opção de encomendas via WhatsApp e serviços de delivery.
+✨ Funcionalidades
+O site está dividido nas seguintes seções:
 
-Localização e Horários: Informa o endereço e os horários de funcionamento da padaria, incluindo os horários da pizzaria.
+Navegação Fixa: Um menu no topo da página que acompanha o usuário durante a rolagem, permitindo acesso rápido a todas as seções.
 
-Rodapé: Contém informações de direitos autorais e o desenvolvedor.
+Cabeçalho: Apresenta o logo principal da padaria e seu slogan, "20 Anos de tradição".
 
-Como Visualizar
-Para visualizar o site, basta abrir o arquivo index.html em qualquer navegador web.
+Galerias de Imagens: Seções visuais com fotos dos produtos para atrair os clientes.
 
-Tecnologias Utilizadas
-HTML5: Para a estrutura e conteúdo da página.
+Mix de Produtos e Cardápio: Tabelas bem estruturadas que listam os produtos oferecidos, suas descrições e preços, com um efeito de cores alternadas nas linhas ("efeito zebra") para melhor legibilidade.
 
-Contribuição
-Atualmente, este projeto é um website institucional simples e não prevê contribuições externas.
+Sobre Nós: Uma seção que conta a história e a missão da padaria.
 
-Autor
-Verônica Dias
+Vídeos: Espaço para conteúdo multimídia, como um vídeo institucional e um vídeo incorporado.
+
+Diferenciais: Destaca os pontos fortes do serviço, como promoções, delivery e encomendas via WhatsApp.
+
+Localização e Horários: Informações claras sobre o endereço e os horários de funcionamento, apresentadas em uma tabela.
+
+Links para Formulários: Uma seção final que direciona o usuário para outras páginas, como Cadastro, Contato, Pedidos e Feedback.
+
+Rodapé: Contém informações de copyright, endereço e créditos de desenvolvimento.
+
+🚀 Tecnologias Utilizadas
+Este projeto foi construído utilizando tecnologias web fundamentais:
+
+HTML5: Para a estruturação semântica de todo o conteúdo do site.
+
+CSS3: Para estilização, layout e responsividade, com destaque para:
+
+Flexbox: Utilizado para alinhar os itens do menu de navegação e outras seções.
+
+Position Fixed: Para criar a barra de navegação fixa.
+
+Pseudo-classes: Uso de :hover, :focus, :active, :nth-child(even) e :last-of-type para criar interatividade e melhorar a experiência do usuário.
+
+🎨 Estrutura de Estilos e Design
+O arquivo style.css está organizado de forma clara, com seções comentadas que facilitam a manutenção:
+
+Tags Globais: Estilos base para body, header, títulos e parágrafos.
+
+Componentes: Estilos específicos para elementos reutilizáveis como table, form e button.
+
+Layout: Estrutura principal, como a classe .container.
+
+Classes Específicas: Estilos para as seções principais (.secao-navegacao-inicio, .secao-formularios, etc.).
+
+A fonte principal utilizada é a 'Cinzel', uma fonte serifada que confere um ar de elegância e tradição ao design.
+
+🔧 Como Utilizar
+Para visualizar este projeto, basta seguir os passos:
+
+Clone ou baixe este repositório para o seu computador.
+
+Certifique-se de que a estrutura de pastas está correta, com o arquivo index.html na raiz e o style.css dentro de uma pasta css/.
+
+Verifique se as imagens e vídeos estão na pasta assets/, conforme referenciado no HTML.
+
+Abra o arquivo index.html em qualquer navegador de internet (Google Chrome, Firefox, Edge, etc.).
+
+✒️ Autor
+Projeto desenvolvido por Verônica Dias.

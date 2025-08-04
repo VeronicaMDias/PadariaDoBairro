@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!--Dados pessoais-->
     <h1>Falar com a padaria MD</h1>
     <p>*Campos obrigatórios</p>
     <form>
+     <fieldset>
+        <legend>Dados do cliente</legend>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
         <br>
@@ -19,9 +22,12 @@
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" pattern="^\d{2}\d{4,5}\d{4}$" maxlength="11" placeholder="(xx)xxxxx-xxxx" required>
         <br>
+    </fieldset>
     <!--Assunto-->
         <br>
-        <label for="assunto">Assunto:</label> 
+        <fieldset>
+        <legend>Quer falar sobre?</legend>
+        <label for="assunto">Escolha uma opção:</label> 
     <select name="assunto" id="assunto" required>
         <option value="sugestão">Sugestão</option>
         <option value="reclamaçoes">Reclamações</option>
@@ -38,6 +44,7 @@
         <br>
     </section>
         <input type="submit" value="Enviar" ></label>
+    </fieldset>
     </form>
     
 </body>

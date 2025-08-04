@@ -4,38 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padaria MD</title>
+ 
+   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-<header>
-    
-    <h1>Padaria MD </h1>
+  <div class="container">
+
+    <!--navegacao-inicio-->
+    <nav class="secao-navegacao-inicio" id="navegacao-inicio">
+     
+  <ul>
+        <li> <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="75" height="75"></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre-nos">Sobre nós</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        
+      </ul>
+    </nav>
+
+  <!--cabeçalho-->
+ <header class="secao-cabeçalho" id="inicio">
 
     <img src="/assets/img/Padaria-logo-vertical.png.png" alt="logo-da-padaria-MD"
-    width="750" height="380">
-
+    width="750" height="380" >
+    <h1>PADARIA MD</h1>
     <h2> 20 Anos de tradição</h2>
-</header>
-
-
+ </header>
 
 <main>
-   <!-- imagens-->
- <section id="imagens1">
+   <!--imagens -->
+ <section class="secao-imagens1" id="imagens1">
    <img src="assets/img/paes-doces.jpg" alt="paes-doces" width="145" height="120">
    <img src="assets/img/xicara-de-cafe-epão-de-queijo.jpg" alt="paes-de-queijo-cafe" width="145" height="120">
    <img src="assets/img/cesto-de-paofrances.jpg" alt="cesto-de-paofrances" width="145" height="120">
    <img src="assets/img/Paes-trancados.jpg" alt="Paes-trancados" width="145" height="120">
-   <img src="assets/img/bolo-com-cobertura.jpg" alt="bolo-com-cobertura" width="145" height="120" >
+   <img src="assets/img/bolo-com-cobertura.jpg" alt="bolo-com-cobertura" width="145" height="120" ><br>
 </section>
-   <!-- Nossos produtos e Cardápio-->
-  <section id="nossos-produtos">
+   <!--Nossos produtos e Cardápio-->
+  <section class="secao-produtos" id="nossos-produtos">
          
        <table>
         <thead>
           <tr>
-            <th><em>Mix de produtos</em></th>
-            <th><em>Temos:</em> </th>
+            <th><em>Nosso mix de produtos:</em></th>
+             <th><em>Também temos:</em></th>
           </tr>
          </thead>
       <tbody>
@@ -66,18 +83,18 @@
 
    </section>
 
-<!-- imagens-->
-   <section id="imagens2">
+<!--imagens-->
+   <section class="secao-imagens2" id="imagens2"><br>
       <img src="assets/img/mix-de-embutidos.jpg" alt="mix-de-embutidos" width="145" height="120">
       <img src="assets/img/tres-copos-suco-natural.jpg" alt="tres-copos-suco-natural" width="145" height="120">
       <img src="assets/img/fornada-de-paesfraceses.jpg" alt="fornada-de-paesfraceses" width="145" height="120">
       <img src="assets/img/bolos-com-cobertura.jpg" alt="bolos-com-cobertura" width="145" height="120">
-      <img src="assets/img/pizza-de-queijo.jpg" alt="pizza-de-queijo" width="145" height="120" >
+      <img src="assets/img/pizza-de-queijo.jpg" alt="pizza-de-queijo" width="145" height="120" ><br><br>
    </section>
 
-   <section id="cardapio">
-      <strong>Nosso Cardápio</strong>
-   <table border="1">
+   <section class="secao-cardapio" id="cardapio">
+      <h2>Nosso Cardápio</h2>
+   <table>
      
       <thead>  
         <tr>
@@ -155,12 +172,11 @@
           <td>1 unidade 150 ml </td>
          <td>R$ 6,00 </td>
         </tr>
-      </section>
     </tbody>      
   </table>
-
+</section>
    <!--Sobre nós-->
-   <section id="sobre-nos">
+   <section class="secao-sobre-nos" id="sobre-nos">
 
       <h3>Sobre Nós</h3>    
          <p> Temos 20 anos no ramo de Panificação e Doces </p>
@@ -169,6 +185,9 @@
           qualidade e responsabilidade.</p>
          <p>Buscando sempre o destaque pela qualidade e oferecendo uma grande variedade de produtos </p>
 
+         <!--videos-->
+    </section>
+         <section class="secao-videos" id="videos">
          <video src="/assets/img/video/video-institucional-padaria.mp4" type="video/mp4" 
          height="300" width="500" controls > </video><br>
 
@@ -177,24 +196,23 @@
    </section>
 
    <!--Diferenciais-->
-   <section id="diferenciais">
+   <section class="secao-diferenciais" id="diferenciais">
 
-     <h4> Diferenciais</h4>
+     <h3>Diferenciais</h3>
      <p>Temos promoções diariamente <button>Promoções aqui </button></p>
-     <p>Aceitamos encomendas via whatsapp : 11 99123-4567 <img src="assets/img/icone-whatsapp-verde.jpg" alt="icone-whatsapp-verde" width="28
-      " height="12"></p>
-     <p>Entregamos via delivery,peça pelo App, WhatsApp ou <br>
+     <p>Aceitamos encomendas via whatsapp : 11 99123-4567 </p>
+     <p>Entregamos via delivery, peça pelo App, WhatsApp ou <br>
         entre em contato pelo tel:4123-5678</p>
 
    </section>
 
-  <!-- Localização e Horários-->
-   <section id="localizacao-e-horarios">
+  <!--Localização e Horários-->
+   <section class="secao-localizacao-e-horarios" id="localizacao-e-horarios">
      <h4> Localização e Horários</h4>
 
      <p>Rua São Paulo n° 333</p>
   
-     <table border="1">
+     <table>
       <thead>
          <tr>
             <th>Dias da semana</th>
@@ -212,17 +230,22 @@
         </tr>
         <tr>
           <td>Domingo e feriados
-          <td>  07:00 ás 23:00 hrs</td>
+          <td>07:00 ás 23:00 hrs</td>
         </tr>
-          <td> Pizzaria</td>
-          <td>  Apartir das 18 hrs</td>
+        <tr>
+          <td>Pizzaria</td>
+          <td>Apartir das 18 hrs</td>
         </tr>
       </tbody>  
   </table>
 
-     <p>Baixe nosso App : Padaria MD <button>Baixe aqui</button></p>
+  <!--baixe-nosso-app-->
+</section>
+     <p>Baixe nosso App : Padaria MD <button class="btn-baixe-aqui">Baixe aqui</button></p>
+</section>
 
-   </section>
+<!--lista-de-formularios-->
+  <section class="secao-formularios" id="formularios" >
     <p>Para saber mais:</p>
    <nav>
      <ul>
@@ -232,20 +255,25 @@
        <li><a href="/feedback.html">Feedback</a></li>
      </ul>
   </nav>
-
+  </section>
 
   </main>
 
-  <img src="/assets/img/Padaria-logo-original.png.png" alt="logo-da-padaria-MD"
-  width="750" height="400">
+<!--rodapé-->
+   <footer class="secao-rodape" id="rodape">
 
-   <footer id="rodape">
-     <p>&copy;2025 Todos os direitos reservados</p>
+    <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="150" height="150">
 
-     <p>desenvolvido por Verônica Dias</p>
+     <p>&copy;2025 Meu primeiro site. Todos os direitos reservados</p>
+
+     <address>
+      Rua São Paulo, n°333 - São Paulo, Sp, Brasil.
+     </address>
+
+     <p>Desenvolvido por Verônica Dias</p>
 
   </footer>
-  
+  </div>
 </body>
 </html>
 

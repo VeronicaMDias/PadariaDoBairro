@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <!--pedidos-->
 <body>
@@ -37,6 +38,8 @@
             <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" required>
             <br>
             <br>
+     </fieldset>
+            <fieldset>
             <!--dados do pedido-->
             <legend>Detalhes do Pedido</legend>
             <label for="produto">Produto</label><br>
@@ -46,6 +49,7 @@
             <input type="radio" id="produto" name="produto" value="bolo">Pizza<br>
             <input type="radio" id="produto" name="produto" value="bolo">Bolo caseiro<br>
             <br>
+            
             <!--sabores-->
             <label for="sabor">Sabor ou Recheio</label><br>
             <select name="sabor" id="sabor"><br>
@@ -72,13 +76,18 @@
 
         </fieldset>
         <!--dados adicionais-->
+        <fieldset>
             <legend>Informações adicionais</legend>
+
+            <label for="orcamento">Orçamento</label><br>
+            <input type="number" id="orcamento" name="orcamento" placeholder="R$ 00,00"><br>
             <label for="observacoes">Observações</label><br>
             <textarea name="observacoes" id="observacoes" minlength="10" rows="5" 
             placeholder="Escreva aqui suas observações"></textarea><br>
-            <label for="orcamento">Orçamento</label><br>
-            <input type="number" id="orcamento" name="orcamento" placeholder="R$ 00,00">
-     <fieldset>
+            <input type="submit" value="Enviar" ></label>
+
+           
+        </fieldset>
 
     </form>
     
