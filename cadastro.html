@@ -6,43 +6,63 @@
     <title>cadastro</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <!--cadastro-->
 <body>
+    <div class="container-principal">
+        <header class="secao-cabecalho" id="inicio">
+            <div class="container">
+                 <!--secao-navegacao-inicio-->
+                <nav class="secao-navegacao-inicio" id="navegacao-inicio">
+                    <ul>
+                        <li><img src="assets/img/icone-padaria.png" class="icone-padaria" width="75" height="75"></li>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre-nos">Sobre nós</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </nav>
+    <div class="container-cadastro">
     <h1>Cadastro</h1>
     <p>*Campos obrigatórios</p>
     <form>
      <fieldset>
             <legend>Dados Pessoais</legend>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required><br>
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" pattern="^\d{2}\d{4,5}\d{4}$" maxlength="11" placeholder="(xx)xxxxx-xxxx" required><br>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email"placeholder="Seu.email@exemplo.com" required ><br>
-            <label for="data-nascimento">Data de Nascimento:</label><br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="^\d{2}\d{4,5}\d{4}$" maxlength="11" placeholder="(xx)xxxxx-xxxx" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"placeholder="Seu.email@exemplo.com" required >
+            <label for="data-nascimento">Data de Nascimento:</label>
             <input type="date" id="data-nascimento" name="data-nascimento">
      </fieldset>
       <!--endereco-->
       <fieldset>      
             <legend>Endereço</legend>
-            <label for="rua">Rua:</label><br>
+            <label for="rua">Rua:</label>
             <input type="text" id="rua" name="rua" placeholder="Rua ou avenida" required>
-            <br>
-            <label for="numero">Número:</label><br>
+            
+            <label for="numero">Número:</label>
             <input type="text" id="numero" name="numero" placeholder="Número" required>
-            <br>
-            <label for="bairro">Bairro:</label><br>
+            
+            <label for="bairro">Bairro:</label>
             <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
-            <br>
-            <label for="cidade">Cidade:</label><br>
+            
+            <label for="cidade">Cidade:</label>
             <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
-            <br>
-            <label for="estado">Estado:</label><br>
+            
+            <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" placeholder="Estado" required>
-            <br>
-            <label for="cep">CEP:</label><br>
+            
+            <label for="cep">CEP:</label>
             <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" required>
-            <br><br>
+        
            </fieldset>
 
            <!--preferencias-->
@@ -51,17 +71,17 @@
             <p>Quais seus produtos preferidos ?</p>
             
             <input type="checkbox" id="pre"name="preferencias" value="paes">
-            <label for="preferencias">Pães</label><br>
+            <label for="preferencias">Pães</label>
             <input type="checkbox" id="preferencias"name="preferencias" value="doces">
-            <label for="preferencias">Doces</label><br>
+            <label for="preferencias">Doces</label>
             <input type="checkbox" id="preferencias"name="preferencias" value="salgados">
-            <label for="preferencias">Salgados</label><br>
+            <label for="preferencias">Salgados</label>
             <input type="checkbox" id="preferencias"name="preferencias" value="pizzas">
-            <label for="preferencias">Pizzas</label><br>
+            <label for="preferencias">Pizzas</label>
             <input type="checkbox" id="preferencias"name="preferencias" value="bebidas">
-            <label for="preferencias">Bebidas</label><br>
+            <label for="preferencias">Bebidas</label>
             <input type="checkbox" id="preferencias"name="preferencias" value="bolos">
-            <label for="preferencias">Bolos</label><br>
+            <label for="preferencias">Bolos</label>
             
         </fieldset>
 
@@ -70,10 +90,29 @@
             <legend>Termos e Condições</legend>
             <input type="checkbox" id="termos"name="termos"
             value="gostaria-de-receber-nossas-promoções-por-email?">
-            <label for="termos">Gostaria de receber nossas promoções por email?</label><br>
+            <label for="termos">Gostaria de receber nossas promoções por email?</label>
             <input type="checkbox" id="termos"name="termos"
             value="aceita-nossos-termos-de-uso?">
             <label for="termos">Aceita nossos termos de uso ?</label><br>
 
-
+        </div>
         </fieldset>
+    </form>  
+    
+    <footer class="secao-rodape" id="rodape">
+        <div class="rodape-container">
+            <div class="icone-padaria">
+                <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="150" height="150">
+            </div>
+            <div class="informacoes-rodape">
+                <p>&copy;2025 Meu primeiro site. Todos os direitos reservados</p>
+                <address>
+                    Rua São Paulo, n°333 - São Paulo, Sp, Brasil. <br>
+                    <strong>Telefone:</strong> 11 4123-5678 | <strong>WhatsApp:</strong> 11 99123-4567
+                </address>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

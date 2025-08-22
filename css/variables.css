@@ -1,0 +1,40 @@
+:root {
+    /* =================================
+       CORES
+       Paleta de cores principal do site.
+    ================================= */
+    --cor-fundo: #f6eee0;
+    --cor-texto-principal: #562717;
+    --cor-destaque-marrom: #8b4513;
+    --cor-destaque-claro: #d2b48c;
+    --cor-card: #f5f5dc;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-sucesso: #28a745;
+    --cor-perigo: red;
+
+    /* =================================
+       TIPOGRAFIA (FONTES)
+       Controla as fontes e tamanhos de texto.
+    ================================= */
+    --fonte-principal: 'Cinzel', serif;
+    --tamanho-texto-base: 16px; /* Tamanho padrão para parágrafos */
+    --tamanho-texto-pequeno: 12px;
+    --tamanho-texto-grande: 18px;
+
+    /* =================================
+       ESPAÇAMENTOS
+       Valores padrão para margens e preenchimentos (padding).
+    ================================= */
+    --espacamento-pequeno: 10px;
+    --espacamento-medio: 20px;
+    --espacamento-grande: 40px;
+
+    /* =================================
+       COMPONENTES
+       Estilos para elementos como cards, botões e inputs.
+    ================================= */
+    --raio-borda-padrao: 10px; /* Para arredondar as bordas */
+    --sombra-padrao: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    --largura-maxima-container: 960px; /* Largura do conteúdo principal */
+}

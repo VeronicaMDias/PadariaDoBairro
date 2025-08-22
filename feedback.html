@@ -7,6 +7,25 @@
   <link rel="stylesheet" href="/css/style.css">
  </head>
  <body>
+  <div class="container-principal">
+    <header class="secao-cabecalho" id="inicio">
+        <div class="container">
+             <!--secao-navegacao-inicio-->
+            <nav class="secao-navegacao-inicio" id="navegacao-inicio">
+                <ul>
+                    <li><img src="assets/img/icone-padaria.png" class="icone-padaria" width="75" height="75"></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+  <div class="container-feedback">
     <h1>Feedback sobre Padaria MD</h1>
     <form>
   <fieldset>
@@ -33,13 +52,13 @@
 
    </legend> Avaliação <legend>
 
-    <input type="radio" name="avaliacao"id="avaliacao" value="bom" >
+    <input type="radio" name="avaliacao"id="avaliacao-bom" value="bom" >
     <label for="avaliacao">Bom</label><br>
-    <input type="radio" name="avaliacao"id="avaliacao" value="regular" >
+    <input type="radio" name="avaliacao"id="avaliacao-regular" value="regular" >
     <label for="avaliacao">Regular</label><br>
-    <input type="radio" name="avaliacao"id="avaliacao" value="ruim" >
+    <input type="radio" name="avaliacao"id="avaliacao-ruim" value="ruim" >
     <label for="avaliacao">Ruim</label><br>
-    <input type="radio" name="avaliacao"id="avaliacao" value="otimo" >
+    <input type="radio" name="avaliacao"id="avaliacao-excelente" value="otimo" >
     <label for="avaliacao">Ecelente</label><br>
 
   
@@ -60,10 +79,26 @@
 
         <p>Comentários</p>
         <textarea name="comentarios" id="comentarios" rows="4"></textarea><br>
-        <input type="submit" value="Enviar" ></label>
+        <input type="submit" value="Enviar" >
 
    </fieldset>   
     </form>
 
+    <footer class="secao-rodape" id="rodape">
+      <div class="rodape-container">
+          <div class="icone-padaria">
+              <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="150" height="150">
+          </div>
+          <div class="informacoes-rodape">
+              <p>&copy;2025 Meu primeiro site. Todos os direitos reservados</p>
+              <address>
+                  Rua São Paulo, n°333 - São Paulo, Sp, Brasil. <br>
+                  <strong>Telefone:</strong> 11 4123-5678 | <strong>WhatsApp:</strong> 11 99123-4567
+              </address>
+          </div>
+      </div>
+  </footer>
+
+</div>
  </body>
 </html>

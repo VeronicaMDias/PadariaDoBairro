@@ -8,6 +8,25 @@
 </head>
 <!--pedidos-->
 <body>
+    <div class="container-principal">
+        <header class="secao-cabecalho" id="inicio">
+            <div class="container">
+                 <!--secao-navegacao-inicio-->
+                <nav class="secao-navegacao-inicio" id="navegacao-inicio">
+                    <ul>
+                        <li><img src="assets/img/icone-padaria.png" class="icone-padaria" width="75" height="75"></li>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre-nos">Sobre nós</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                    </ul>
+                </nav>
+    <div class="container-pedidos">
     <h1>Pedidos</h1>
     <p>*Campos obrigatórios</p>
     <form>
@@ -42,7 +61,7 @@
             <fieldset>
             <!--dados do pedido-->
             <legend>Detalhes do Pedido</legend>
-            <label for="produto">Produto</label><br>
+            <label for="produto">Produto</label>
             <input type="radio" id="produto" name="produto" value="bolo">Bolo recheado<br>
             <input type="radio" id="produto" name="produto" value="bolo">Torta<br>
             <input type="radio" id="produto" name="produto" value="bolo">Salgados<br>
@@ -51,7 +70,7 @@
             <br>
             
             <!--sabores-->
-            <label for="sabor">Sabor ou Recheio</label><br>
+            <label for="sabor">Sabor ou Recheio</label>
             <select name="sabor" id="sabor"><br>
                 <option value="">--Escolha um sabor--</option>
                 <option value="chocolate">Chocolate</option>
@@ -62,15 +81,15 @@
             </select><br>
             <br>
             <!--tamanho-->
-            <label for="tamanho">Tamanho</label><br><br>
+            <label for="tamanho">Tamanho</label>
             <input type="radio" id="tamanho" name="tamanho" value="pequeno">Pequeno 1,5kg<br>
             <input type="radio" id="tamanho" name="tamanho" value="medio">Médio 3,0kg<br>
             <input type="radio" id="tamanho" name="tamanho" value="grande">Grande 5,0kg<br>
             <br>
-            <label for="data">Data de entrega</label><br>
-            <input type="date" id="data" name="data" required>
+            <label for="data">Data de entrega</label>
+            <input type="date" id="data" name="data" required> <br>
             <br>
-            <label for="hora">Hora de entrega</label><br>
+            <label for="hora">Hora de entrega</label>
             <input type="time" id="hora" name="hora" required>
             <br>
 
@@ -79,17 +98,32 @@
         <fieldset>
             <legend>Informações adicionais</legend>
 
-            <label for="orcamento">Orçamento</label><br>
-            <input type="number" id="orcamento" name="orcamento" placeholder="R$ 00,00"><br>
-            <label for="observacoes">Observações</label><br>
+            <label for="orcamento">Orçamento</label>
+            <input type="number" id="orcamento" name="orcamento" placeholder="R$ 00,00"><br><br>
+            <label for="observacoes">Observações</label>
             <textarea name="observacoes" id="observacoes" minlength="10" rows="5" 
             placeholder="Escreva aqui suas observações"></textarea><br>
-            <input type="submit" value="Enviar" ></label>
+            <input type="submit" value="Enviar">
 
            
         </fieldset>
 
     </form>
-    
+    <footer class="secao-rodape" id="rodape">
+        <div class="rodape-container">
+            <div class="icone-padaria">
+                <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="150" height="150">
+            </div>
+            <div class="informacoes-rodape">
+                <p>&copy;2025 Meu primeiro site. Todos os direitos reservados</p>
+                <address>
+                    Rua São Paulo, n°333 - São Paulo, Sp, Brasil. <br>
+                    <strong>Telefone:</strong> 11 4123-5678 | <strong>WhatsApp:</strong> 11 99123-4567
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    </div>
 </body>
 </html>

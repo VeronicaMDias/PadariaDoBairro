@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Padaria MD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="secao-cabecalho" id="inicio">
+        <div class="container">
+            <nav class="secao-navegacao-inicio" id="navegacao-inicio">
+                <ul>
+                    <li><img src="assets/img/icone-padaria.png" class="icone-padaria" width="75" height="75"></li>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#sobre-nos">Sobre nós</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="index.html#diferenciais">Diferenciais</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-cardapio" id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <div class="product-list">
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Pão francês</h3>
+                        <p>1kg</p>
+                        <div id="detalhes-paofrances" style="display: none;">
+                            <p>Pão fresquinho, feito com fermentação natural.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 16,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-paofrances" class="btn-diminuir">-</button>
+                            <span id="quantidade-paofrances"class="quantidade">1</span>
+                            <button id="btn-aumentar-paofrances" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-paofrances" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-paofrances" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Pão de queijo</h3>
+                        <p>100g</p>
+                        <div id="detalhes-paodequeijo" style="display: none;">
+                            <p>Feito com queijo canastra de verdade.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 5,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-paodequeijo" class="btn-diminuir">-</button>
+                            <span id="quantidade-paodequeijo" class="quantidade">1</span>
+                            <button id="btn-aumentar-paodequeijo" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-paodequeijo" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-paodequeijo" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Catarina de Frango, frios ou bauru</h3>
+                        <p>1 unidade (diversos sabores)</p>
+                        <div id="detalhes-catarina" style="display: none;">
+                            <p>Salgado assado, perfeito para um lanche rápido.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 12,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-catarina" class="btn-diminuir">-</button>
+                            <span id="quantidade-catarina" class="quantidade">1</span>
+                            <button id="btn-aumentar-catarina" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-catarina" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-catarina" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Pão sovado ou recheado</h3>
+                        <p>1 unidade (diversos sabores)</p>
+                        <div id="detalhes-paosovado" style="display: none;">
+                            <p>Massa fofinha com recheios variados.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 15,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-paosovado" class="btn-diminuir">-</button>
+                            <span id="quantidade-paosovado" class="quantidade">1</span>
+                            <button id="btn-aumentar-paosovado" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-paosovado" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-paosovado" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Pão trançado</h3>
+                        <p>1 unidade (diversos sabores)</p>
+                        <div id="detalhes-paotrancado" style="display: none;">
+                            <p>Ideal para um café da tarde especial.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 13,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-paotrancado" class="btn-diminuir">-</button>
+                            <span id="quantidade-paotrancado" class="quantidade">1</span>
+                            <button id="btn-aumentar-paotrancado" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-paotrancado" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-paotrancado" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Carolinas</h3>
+                        <p>100g (brigadeiro, doce de leite ou beijinho)</p>
+                        <div id="detalhes-carolinas" style="display: none;">
+                            <p>Pequenas delícias recheadas.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 5,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-carolinas" class="btn-diminuir">-</button>
+                            <span id="quantidade-carolinas" class="quantidade">1</span>
+                            <button id="btn-aumentar-carolinas" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-carolinas" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-carolinas" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Bolo caseiro ou recheado</h3>
+                        <p>1 unidade de aprox. 2kg (diversos sabores)</p>
+                        <div id="detalhes-bolocaseiro" style="display: none;">
+                            <p>O sabor do bolo da vovó, feito com carinho.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 35,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-bolocaseiro" class="btn-diminuir">-</button>
+                            <span id="quantidade-bolocaseiro" class="quantidade">1</span>
+                            <button id="btn-aumentar-bolocaseiro" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-bolocaseiro" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-bolocaseiro" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Bolo com cobertura</h3>
+                        <p>1 unidade de aprox. 1,5kg (diversos sabores)</p>
+                        <div id="detalhes-bolocobertura" style="display: none;">
+                            <p>Para comemorar os melhores momentos.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 30,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-bolocobertura" class="btn-diminuir">-</button>
+                            <span id="quantidade-bolocobertura" class="quantidade">1</span>
+                            <button id="btn-aumentar-bolocobertura" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-bolocobertura" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-bolocobertura" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Pizza grande 8 fatias</h3>
+                        <p>1 unidade (diversos sabores)</p>
+                        <div id="detalhes-pizza" style="display: none;">
+                            <p>Massa fininha e crocante, com muito recheio.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 42,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-pizza" class="btn-diminuir">-</button>
+                            <span id="quantidade-pizza" class="quantidade">1</span>
+                            <button id="btn-aumentar-pizza" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-pizza" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-pizza" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Suco natural</h3>
+                        <p>1 copo de 300 ml (diversos sabores)</p>
+                        <div id="detalhes-suco" style="display: none;">
+                            <p>Feito com frutas frescas e selecionadas.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 12,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-suco" class="btn-diminuir">-</button>
+                            <span id="quantidade-suco" class="quantidade">1</span>
+                            <button id="btn-aumentar-suco" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-suco" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-suco" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <div class="product-list-item">
+                    <div class="item-info">
+                        <h3>Copo de café</h3>
+                        <p>1 unidade 150 ml</p>
+                        <div id="detalhes-cafe" style="display: none;">
+                            <p>Café passado na hora para dar mais energia.</p>
+                        </div>
+                    </div>
+                    <div class="item-price"><p>R$ 6,00</p></div>
+                    <div class="item-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-diminuir-cafe" class="btn-diminuir">-</button>
+                            <span id="quantidade-cafe"class="quantidade">1</span>
+                            <button id="btn-aumentar-cafe" class="btn-aumentar">+</button>
+                        </div>
+                        <button id="btn-detalhes-cafe" class="btn-action">Ver Detalhes</button>
+                        <button id="btn-adicionar-cafe" class="btn-action">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="cart-actions">
+                    <button id="btn-limpar-carrinho">Limpar Carrinho</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="secao-rodape" id="rodape">
+        <div class="rodape-container">
+            <div class="icone-rodape">
+                <img src="assets/img/icone-padaria.png" alt="icone-padaria" width="150" height="150">
+            </div>
+            <div class="informacoes-rodape">
+                <p>&copy;2025 Meu primeiro site. Todos os direitos reservados</p>
+                <address>
+                    Rua São Paulo, n°333 - São Paulo, Sp, Brasil. <br>
+                    <strong>Telefone:</strong> 11 4123-5678 | <strong>WhatsApp:</strong> 11 99123-4567
+                </address>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+ 
+</body>
+</html>

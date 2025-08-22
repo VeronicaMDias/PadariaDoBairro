@@ -1,82 +1,100 @@
-
 Padaria MD - Website Institucional
-Bem-vindo ao repositório do site institucional da Padaria MD! Este é um projeto front-end desenvolvido para apresentar a padaria, seus produtos, cardápio e diferenciais, além de fornecer informações de contato e localização. O projeto foi criado com foco em um design clássico e acolhedor, refletindo a tradição de 20 anos do estabelecimento.
+Bem-vindo ao repositório do site institucional da Padaria MD! Este é um projeto front-end que apresenta a padaria, seus produtos e diferenciais. O projeto foi criado com foco em um design clássico e acolhedor, refletindo a tradição de 20 anos do estabelecimento, e inclui um script de simulação de lógica de negócios em JavaScript.
 
 📜 Índice
 Visão Geral do Projeto
 
-✨ Funcionalidades
+✨ Funcionalidades Detalhadas
 
 🚀 Tecnologias Utilizadas
 
 🎨 Estrutura de Estilos e Design
 
-🔧 Como Utilizar
+🔧 Como Executar o Projeto
+
+🌟 Próximos Passos
 
 ✒️ Autor
 
 📖 Visão Geral do Projeto
-O site é uma página única (one-page) que utiliza links de navegação para rolar suavemente até as seções correspondentes. A página apresenta uma identidade visual consistente, com uma paleta de cores em tons de marrom e bege que remetem a produtos de panificação artesanal e um ambiente aconchegante.
+O site é apresentado em um estilo de página única (one-page), utilizando links de navegação para rolar suavemente até as seções correspondentes. A identidade visual é consistente, com uma paleta de cores em tons de marrom e bege que remetem a um ambiente aconchegante de panificação artesanal.
 
-✨ Funcionalidades
-O site está dividido nas seguintes seções:
+Além da interface visual, o projeto inclui um arquivo script.js que simula, no console do navegador, diversas operações da padaria, como gestão de produtos, simulação de compras, e formatação de dados, demonstrando conceitos fundamentais de JavaScript.
 
-Navegação Fixa: Um menu no topo da página que acompanha o usuário durante a rolagem, permitindo acesso rápido a todas as seções.
+✨ Funcionalidades Detalhadas
+O projeto implementa diversas funcionalidades modernas de front-end:
 
-Cabeçalho: Apresenta o logo principal da padaria e seu slogan, "20 Anos de tradição".
+Layout Estrutural com CSS Grid: A estrutura principal da página (header, main, footer) é organizada de forma robusta e semântica utilizando CSS Grid.
 
-Galerias de Imagens: Seções visuais com fotos dos produtos para atrair os clientes.
+Componentes Flexíveis com Flexbox: Flexbox é usado para alinhar de forma eficiente os componentes internos, como o menu de navegação, galerias de produtos e o rodapé.
 
-Mix de Produtos e Cardápio: Tabelas bem estruturadas que listam os produtos oferecidos, suas descrições e preços, com um efeito de cores alternadas nas linhas ("efeito zebra") para melhor legibilidade.
+Navegação Fixa e Interativa: Um menu no topo da página (position: fixed) acompanha o usuário durante a rolagem, permitindo acesso rápido a todas as seções.
 
-Sobre Nós: Uma seção que conta a história e a missão da padaria.
+Cardápio com Componentes Dinâmicos: Os produtos são exibidos em cards com hover effects e "badges" de "Promoção" e "Novidade" para destacar itens especiais.
 
-Vídeos: Espaço para conteúdo multimídia, como um vídeo institucional e um vídeo incorporado.
+Conteúdo Multimídia: A página incorpora um vídeo institucional hospedado localmente (<video>) e um vídeo do YouTube (<iframe>).
 
-Diferenciais: Destaca os pontos fortes do serviço, como promoções, delivery e encomendas via WhatsApp.
+Elementos de UI Flutuantes: Botões de "Voltar ao Topo" e um link direto para o WhatsApp melhoram a usabilidade e o engajamento.
 
-Localização e Horários: Informações claras sobre o endereço e os horários de funcionamento, apresentadas em uma tabela.
+Simulação de Lógica de Negócios (via Console): O arquivo script.js executa uma série de operações que são exibidas no console do desenvolvedor, incluindo:
 
-Links para Formulários: Uma seção final que direciona o usuário para outras páginas, como Cadastro, Contato, Pedidos e Feedback.
+Gerenciamento de Dados: Criação de produtos, clientes e categorias usando objetos e arrays.
 
-Rodapé: Contém informações de copyright, endereço e créditos de desenvolvimento.
+Simulação de Compra: Cálculo de subtotal, aplicação de descontos com base na quantidade e cálculo de troco.
+
+Formatação de Dados: Conversão de valores numéricos para o formato de moeda (BRL e EUR), formatação de datas e capitalização de nomes.
+
+Carrinho de Compras Dinâmico: Funções para adicionar, remover e visualizar itens em um carrinho de compras.
+
+Geração de Relatórios: Criação de um objeto de pedido final consolidando todas as informações da compra.
 
 🚀 Tecnologias Utilizadas
 Este projeto foi construído utilizando tecnologias web fundamentais:
 
 HTML5: Para a estruturação semântica de todo o conteúdo do site.
 
-CSS3: Para estilização, layout e responsividade, com destaque para:
+CSS3: Para estilização completa, layout e interatividade, com destaque para:
 
-Flexbox: Utilizado para alinhar os itens do menu de navegação e outras seções.
+CSS Grid: Para o layout principal da página.
 
-Position Fixed: Para criar a barra de navegação fixa.
+Flexbox: Para alinhamento de componentes internos.
 
-Pseudo-classes: Uso de :hover, :focus, :active, :nth-child(even) e :last-of-type para criar interatividade e melhorar a experiência do usuário.
+CSS Variables: Para manter a consistência do tema (ex: var(--cor-fundo)).
+
+Positioning: Uso de fixed e absolute para a barra de navegação e badges.
+
+Pseudo-classes: Uso extensivo de :hover, :focus, :active, e :nth-child(even) para interatividade e legibilidade.
+
+JavaScript (ES6+): Utilizado para simular a lógica de negócios da padaria no console do navegador, demonstrando conceitos como:
+
+Estruturas de Dados: Objetos e Arrays para modelar a realidade.
+
+Funções: Declaração de funções tradicionais, funções com retorno e Arrow Functions.
+
+Controle de Fluxo: Uso de if/else if e laços for.
+
+Manipulação de Dados: Métodos de String, Number e Date.
 
 🎨 Estrutura de Estilos e Design
-O arquivo style.css está organizado de forma clara, com seções comentadas que facilitam a manutenção:
+O arquivo style.css é organizado de forma clara, com seções comentadas que facilitam a manutenção. A fonte principal utilizada é a 'Cinzel', uma fonte serifada que confere um ar de elegância e tradição ao design. A paleta de cores foca em tons terrosos para criar uma atmosfera acolhedora.
 
-Tags Globais: Estilos base para body, header, títulos e parágrafos.
-
-Componentes: Estilos específicos para elementos reutilizáveis como table, form e button.
-
-Layout: Estrutura principal, como a classe .container.
-
-Classes Específicas: Estilos para as seções principais (.secao-navegacao-inicio, .secao-formularios, etc.).
-
-A fonte principal utilizada é a 'Cinzel', uma fonte serifada que confere um ar de elegância e tradição ao design.
-
-🔧 Como Utilizar
+🔧 Como Executar o Projeto
 Para visualizar este projeto, basta seguir os passos:
 
-Clone ou baixe este repositório para o seu computador.
+Clone ou baixe o repositório para o seu computador.
 
-Certifique-se de que a estrutura de pastas está correta, com o arquivo index.html na raiz e o style.css dentro de uma pasta css/.
+Certifique-se de que a estrutura de pastas está correta, com index.html na raiz e os outros arquivos em suas respectivas pastas (css/, js/, assets/).
 
-Verifique se as imagens e vídeos estão na pasta assets/, conforme referenciado no HTML.
+Abra o arquivo index.html em qualquer navegador de internet (Google Chrome, Firefox, etc.).
 
-Abra o arquivo index.html em qualquer navegador de internet (Google Chrome, Firefox, Edge, etc.).
+Importante: Abra o console do desenvolvedor (pressione F12) para ver a simulação do script.js em ação.
+
+🌟 Próximos Passos
+Como forma de aprimorar o projeto, as seguintes funcionalidades podem ser implementadas:
+
+Responsividade: Adicionar Media Queries no CSS para garantir que o site se adapte perfeitamente a telas de tablets e celulares.
+
+Interatividade com o DOM: Utilizar o JavaScript para manipular o HTML e o CSS diretamente, tornando a página interativa (ex: adicionar itens ao carrinho visualmente, em vez de apenas no console).
 
 ✒️ Autor
 Projeto desenvolvido por Verônica Dias.
